@@ -15,6 +15,11 @@ function s:ALEFixEnable()
     let g:ale_fix_on_save=1
 endfunction
 
+ " diable ale fix when in diff mode
+if &diff
+    call s:ALEFixDisable()
+endif
+
 
 
 
