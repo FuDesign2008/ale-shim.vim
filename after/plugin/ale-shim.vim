@@ -1,6 +1,6 @@
 
 
-if &compatible || exists(':ALEFixDisable')
+if &compatible || exists(':ALEFixDisable') == 2
     finish
 endif
 let s:save_cpo = &cpoptions
